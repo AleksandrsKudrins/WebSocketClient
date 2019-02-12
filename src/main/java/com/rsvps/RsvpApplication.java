@@ -19,7 +19,7 @@ public class RsvpApplication {
 @Bean
     public ApplicationRunner initializeConnection(
             RsvpsWebSocketHandler rsvpsWebSocketHandler){
-        return argss -> {
+        return args -> {
             WebSocketClient rsvpsSocketClient = new StandardWebSocketClient();
 
             rsvpsSocketClient.doHandshake(
